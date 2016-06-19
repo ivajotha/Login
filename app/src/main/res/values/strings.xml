@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="hit_user">User</string>
+    <string name="hit_pwd">Password</string>
+    <string name="title_main">Enter Your Account Information:</string>
+    <string name="app_btn_login">Login</string>
+</resources>

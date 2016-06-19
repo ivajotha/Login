@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Autenticación</string>
+    <string name="hit_user">Usuario</string>
+    <string name="hit_pwd">Contraseña</string>
+    <string name="title_main">Ingresa tu Información:</string>
+    <string name="app_btn_login">Ingresar</string>
+</resources>
