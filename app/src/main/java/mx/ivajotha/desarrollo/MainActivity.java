@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
+    /**  Funcion procesa los datos del Login **/
     private void processData() {
 
         final String m_user = m_Usr.getText().toString();
@@ -51,13 +51,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void run()
             {
 
-
                 m_loading.setVisibility(View.GONE);
 
                 if(m_user.equals("ivan") && m_pass.equals("entra"))
                 {
                     Toast.makeText(getApplicationContext(),"Correcto",Toast.LENGTH_SHORT).show();
-                    
+
+                    Intent intent= new Intent(getApplicationContext(),ActivityDetail.class);
+                    intent.putExtra("key_user",m_user);
+                    startActivity(intent);
+
                 } else {
 
                     Toast.makeText(getApplicationContext(),"Tus datos son incorrectos",Toast.LENGTH_SHORT).show();

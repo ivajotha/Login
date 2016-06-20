@@ -3,5 +3,8 @@
     <string name="hit_user">User</string>
     <string name="hit_pwd">Password</string>
     <string name="title_main">Enter Your Account Information:</string>
+    <string name="title_inter">Hi</string>
     <string name="app_btn_login">Login</string>
+    <string name="app_btnperfil">My profile</string>
+    <string name="app_btnaddRows">My List</string>
 </resources>
