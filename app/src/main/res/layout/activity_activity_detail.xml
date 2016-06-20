@@ -15,8 +15,14 @@
         android:layout_width="match_parent"
         android:paddingBottom="@dimen/margin_Bottom"
         android:textSize="@dimen/textsize"
-        android:text="@string/title_inter"
         android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_below="@id/titleInter"
+        android:id="@+id/fragmentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,7 +34,6 @@
         android:orientation="horizontal" >
 
         <Button
-
             android:text="@string/app_btnperfil"
             android:layout_weight="1"
             android:id="@+id/btnFragmentA"

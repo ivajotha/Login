@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 if(m_user.equals("ivan") && m_pass.equals("entra"))
                 {
+
                     Toast.makeText(getApplicationContext(),"Correcto",Toast.LENGTH_SHORT).show();
 
                     Intent intent= new Intent(getApplicationContext(),ActivityDetail.class);
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     Toast.makeText(getApplicationContext(),"Tus datos son incorrectos",Toast.LENGTH_SHORT).show();
                 }
+
             }
         }, 1000 * 4);
 
