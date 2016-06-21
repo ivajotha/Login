@@ -25,6 +25,8 @@ public class ActivityDetail extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+
+        /**  Cachamos el click y lanzamos los Fragments**/
         switch (v.getId())
         {
             case R.id.btnFragmentA:
@@ -37,11 +39,12 @@ public class ActivityDetail extends AppCompatActivity implements View.OnClickLis
     }
 
     private void showList() {
+        /**  Envia Fragment para la Listas **/
         getFragmentManager().beginTransaction().replace(R.id.fragmentHolder,new FragmentList()).commit();
     }
 
     private void showProfile(String userName) {
-
+        /**  Envia Fragment para Mi perfil **/
         FragmentProfile f = FragmentProfile.newInstance(userName);
         getFragmentManager().beginTransaction().replace(R.id.fragmentHolder,f).commit();
 

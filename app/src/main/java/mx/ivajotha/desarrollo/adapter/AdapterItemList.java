@@ -16,6 +16,8 @@ import mx.ivajotha.desarrollo.model.ModelItem;
 /**
  * Created by jonathan on 20/06/16.
  */
+
+/**  Adaptador del ItemList **/
 public class AdapterItemList extends ArrayAdapter<ModelItem> {
     public AdapterItemList(Context context,List<ModelItem> objects) {
         super(context, 0, objects);

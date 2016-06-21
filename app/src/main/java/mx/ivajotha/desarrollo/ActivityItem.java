@@ -24,6 +24,8 @@ public class ActivityItem extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
         setTitle("Detalles");
+
+        /**  Mostramos los del Item Seleccionado **/
         Pattern pat = Pattern.compile("^[a-m|A-M].*");
         nameItem = getIntent().getExtras().getString("key_user");
 

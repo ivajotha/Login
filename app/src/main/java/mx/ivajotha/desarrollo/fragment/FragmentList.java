@@ -39,6 +39,8 @@ public class FragmentList extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list,container,false);
         listView = (ListView) view.findViewById(R.id.listItems);
+
+        /**  Click para mostra detalle del elemento de la lista **/
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -53,6 +55,7 @@ public class FragmentList extends Fragment {
 
 
         final EditText mItemsText = (EditText) view.findViewById(R.id.mItemText);
+        /**  Agregar un Elemento de la lista **/
         view.findViewById(R.id.btnAddItem).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
