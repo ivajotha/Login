@@ -19,13 +19,13 @@ import mx.ivajotha.desarrollo.R;
 /**
  * Created by jonathan on 20/06/16.
  */
+
 public class FragmentProfile extends Fragment {
 
     private ImageView imgProfile;
     private boolean change=true;
 
-    public static FragmentProfile newInstance(String name)
-    {
+    public static FragmentProfile newInstance(String name){
         FragmentProfile f = new FragmentProfile();
         Bundle b = new Bundle();
         b.putString("user_key",name);

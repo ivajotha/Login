@@ -8,4 +8,7 @@
     <string name="app_btn_login">Ingresar</string>
     <string name="app_btnperfil">Mi Perfil</string>
     <string name="app_btnaddRows">Mi lista</string>
+    <string name="add_item">Agregar</string>
+    <string name="item_empty">Vacio</string>
+    <string name="desc_item">Nombre</string>
 </resources>

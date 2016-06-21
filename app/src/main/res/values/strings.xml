@@ -7,4 +7,7 @@
     <string name="app_btn_login">Login</string>
     <string name="app_btnperfil">My profile</string>
     <string name="app_btnaddRows">My List</string>
+    <string name="add_item">Add</string>
+    <string name="item_empty">Item can\'t be empty</string>
+    <string name="desc_item">Name</string>
 </resources>

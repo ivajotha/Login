@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import mx.ivajotha.desarrollo.fragment.FragmentList;
 import mx.ivajotha.desarrollo.fragment.FragmentProfile;
 
 public class ActivityDetail extends AppCompatActivity implements View.OnClickListener {
@@ -36,7 +37,7 @@ public class ActivityDetail extends AppCompatActivity implements View.OnClickLis
     }
 
     private void showList() {
-
+        getFragmentManager().beginTransaction().replace(R.id.fragmentHolder,new FragmentList()).commit();
     }
 
     private void showProfile(String userName) {
