@@ -45,7 +45,6 @@ public class FragmentList extends Fragment {
                 AdapterItemList adapter= (AdapterItemList) parent.getAdapter();
                 ModelItem modelItem =adapter.getItem(position);
                 ModelItem modelItem2 = array.get(position);
-                
                 Intent intentD= new Intent(getActivity(), ActivityItem.class);
                 intentD.putExtra("key_user",modelItem2.item);
                 startActivity(intentD);
@@ -69,7 +68,7 @@ public class FragmentList extends Fragment {
                     array.add(item);
                     listView.setAdapter(new AdapterItemList(getActivity(),array));
                     counter++;
-                    //mItemsText.setText("");
+                    mItemsText.setText("");
                 }
 
             }

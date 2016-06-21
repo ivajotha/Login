@@ -4,8 +4,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imgProfile"
-        android:src="@drawable/ic_action_settings_voice"
+        android:id="@+id/imgItem"
+        android:layout_marginTop="@dimen/margin_Bottom"
+        android:paddingBottom="@dimen/margin_Bottom"
         android:layout_gravity="center_horizontal"
         android:layout_width="56dp"
         android:layout_height="56dp" />
@@ -13,9 +14,8 @@
     <TextView
         android:id="@+id/titleItemInter"
         android:gravity="center"
+        android:textSize="@dimen/textsize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
 
 </LinearLayout>
